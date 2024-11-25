@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Livros Online</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header .logo {
+            max-width: 150px;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .carousel img.active {
+            opacity: 1;
+        }
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .book-item {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .book-item:hover {
+            transform: translateY(-10px);
+        }
+        .book-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .book-item h3 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #555;
+        }
+        .book-item p {
+            font-size: 16px;
+            color: #777;
+        }
+        .btn-ver-mais {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .categories, .contact {
+            background-color: #f0f0f0;
+        }
+        .categories-list {
+            display: flex;
+            justify-content: space-around;
+        }
+        .categories-list div {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            width: 60%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Brown_Retro_Book_Store_Logo__1_-removebg-preview.png" alt="Logo da Loja" class="logo">
+    </header>
+
+    <div class="carousel">
+        <img src="Descubra Mundos novos em cada pagina!.png" class="active" alt="Imagem 1">
+        <img src="imagem2_url.jpg" alt="Imagem 2">
+    </div>
+
+    <section id="destaques">
+        <div class="container">
+            <h2>Destaques</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="como-fazer.png" alt="Livro Destaque 1">
+                    <h3>Como fazer amigos e influenciar pessoas</h3>
+                    <a href="livro10.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="81ALgAW3gHL._AC_UF1000,1000_QL80_.jpg" alt="Livro Destaque 2">
+                    <h3>Pai rico e pai pobre</h3>
+                    <a href="livro1.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="717diaFhKoL._SY425_.jpg" alt="Livro Destaque 3">
+                    <h3>Poder e manipulação: A Versão moderna de O Príncipe de Maquiavel</h3>
+                    <a href="livro2.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="41UOGU7IYuL._SX342_SY445_.jpg" alt="Livro Destaque 4">
+                    <h3>As 48 leis do poder</h3>
+                    <a href="livro3.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="71mWm5Oq7cL._SY425_.jpg" alt="Livro Destaque 5">
+                    <h3>As armas da persuasão: Como influenciar e não se deixar influenciar</h3>
+                    <a href="livro4.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="81iY2YtIAOL._SY425_.jpg" alt="Livro Destaque 6">
+                    <h3>O Herói e o Fora da lei</h3>
+                    <a href="livro5.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2>Categorias de Livros</h2>
+            <div class="categories-list">
+                <div>
+                    <h3><a href="Ficção.html">Ficção</a></h3>
+                    <p>Explore o mundo da ficção com nossos livros incríveis.</p>
+                </div>
+                <div>
+                    <h3><a href="naoficcao.html">Não-Ficção</a></h3>
+                    <p>Conhecimento e histórias reais para você se inspirar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="populares">
+        <div class="container">
+            <h2>Livros Populares</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="61H-JBmwTEL._SY445_SX342_.jpg" alt="Livro Popular 1">
+                    <h3>Frankenstein</h3>
+                    <a href="livro6.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="5150FfwWxUL._SY445_SX342_.jpg" alt="Livro Popular 2">
+                    <h3>Drácula</h3>
+                    <a href="livro7.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="51qTteRN7kL._SY445_SX342_.jpg" alt="Livro Popular 3">
+                    <h3>O corcunda de Notre Dame</h3>
+                    <a href="livro8.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+                <div class="book-item">
+                    <img src="41BZrk0XBcL._SY445_SX342_.jpg" alt="Livro Popular 4">
+                    <h3>Os três mosqueteiros</h3>
+                    <a href="livro9.html" class="btn-ver-mais">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Nexus Livraria . Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
